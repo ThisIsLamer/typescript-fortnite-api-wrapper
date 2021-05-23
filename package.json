@@ -1,0 +1,23 @@
+{
+  "name": "typescript-fortnite-api-wrapper",
+  "version": "1.0.0",
+  "description": "fortnite api wrapper",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "tsc & node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisIsLamer/typescript-fortnite-api-wrapper.git"
+  },
+  "author": "Lamer (c)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThisIsLamer/typescript-fortnite-api-wrapper/issues"
+  },
+  "homepage": "https://github.com/ThisIsLamer/typescript-fortnite-api-wrapper#readme",
+  "dependencies": {
+    "@types/node-fetch": "^2.5.10",
+    "typescript": "^4.2.4"
+  }
+}
