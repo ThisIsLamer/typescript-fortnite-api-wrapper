@@ -1,0 +1,1 @@
+# typescript-fortnite-api-wrapper
