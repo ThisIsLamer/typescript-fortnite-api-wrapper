@@ -34,7 +34,6 @@
   "Cosmetics_List": "https://fortnite-api.com/v2/cosmetics/br",
   "Cosmetics_Search": "https://fortnite-api.com/v2/cosmetics/br/search",
   "Cosmetics_SearchAll": "https://fortnite-api.com/v2/cosmetics/br/search/all",
-  "Cosmetics_SearchByID": "https://fortnite-api.com/v2/cosmetics/br/",
   "Cosmetics_SearchByIDs": "https://fortnite-api.com/v2/cosmetics/br/search/ids",
   "News": "https://fortnite-api.com/v2/news",
   "News_BR": "https://fortnite-api.com/v2/news/br",
