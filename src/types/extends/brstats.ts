@@ -6,6 +6,12 @@ export interface IBRStatsParams {
   image?: "all" | "keyboardMouse" | "gamepad" | "touch" | "none",
 }
 
+// ###### BRStatsId Params ###### //
+export interface IBRStatsIdParams {
+  accountType?: "epic" | "psn" | "xbl",
+  timeWindow?: "season" | "lifetime",
+  image?: "all" | "keyboardMouse" | "gamepad" | "touch" | "none",
+}
 
 // ########## BRStats ########## //
 export interface IBRStats {
