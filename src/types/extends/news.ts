@@ -1,5 +1,7 @@
+import { IError } from "..";
+
 // ########## News ########## //
-export interface INews {
+export interface INews extends IError {
   status: number,
   data: {
     br?: INewsMods,
@@ -8,7 +10,7 @@ export interface INews {
   }
 }
 
-export interface INewsMod {
+export interface INewsMod extends IError {
   status: number,
   data: INewsMods,
 }

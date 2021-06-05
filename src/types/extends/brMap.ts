@@ -1,4 +1,6 @@
-export interface IBrMap {
+import { IError } from "..";
+
+export interface IBrMap extends IError {
   status: number,
   data: {
     images: {

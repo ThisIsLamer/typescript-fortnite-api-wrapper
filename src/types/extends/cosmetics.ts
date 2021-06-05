@@ -1,3 +1,5 @@
+import { IError } from "..";
+
 // ######  Cosmetics Params ####### //
 export interface ICosmeticsSearchParams {
   matchMethod?: "full" | "contains" | "starts" | "ends",
@@ -7,7 +9,7 @@ export interface ICosmeticsSearchParams {
 }
 
 // ########## Cosmetics ########## //
-export interface ICosmeticsNew {
+export interface ICosmeticsNew extends IError {
   status: number,
   data: {
     build?: string,
@@ -19,17 +21,17 @@ export interface ICosmeticsNew {
   }
 }
 
-export interface ICosmeticsList {
+export interface ICosmeticsList extends IError {
   status: number,
   data: ICosmeticsItems[],
 }
 
-export interface ICosmeticsSearch {
+export interface ICosmeticsSearch extends IError {
   status: number,
   data: ICosmeticsItems,
 }
 
-export interface ICosmeticsSearchAll {
+export interface ICosmeticsSearchAll extends IError {
   status: number,
   data: ICosmeticsItems[],
 }

@@ -78,86 +78,86 @@ export default class FortniteAPI {
     return response.json();
   }
 
-  public async BrMap(language: string = this._language): Promise<IBrMap | IError> {
+  public async BrMap(language: string = this._language): Promise<IBrMap> {
     return await this._requestHandler(endpoints.BR_Map, { language: language });
   }
 
-  public async Playlists(language: string = this._language): Promise<IPlaylists | IError> {
+  public async Playlists(language: string = this._language): Promise<IPlaylists> {
     return await this._requestHandler(endpoints.Playlists, { language: language });
   }
 
-  public async PlaylistsId(id: string, language: string = this._language): Promise<IPlaylists | IError> {
+  public async PlaylistsId(id: string, language: string = this._language): Promise<IPlaylists> {
     return await this._requestHandler(endpoints.Playlists_ID + id, { language: language });
   }
 
-  public async Banners(language: string = this._language): Promise<IBanners | IError> {
+  public async Banners(language: string = this._language): Promise<IBanners> {
     return await this._requestHandler(endpoints.Banners, { language: language });
   }
 
-  public async BannersColors(): Promise<IBannersColors | IError> {
+  public async BannersColors(): Promise<IBannersColors> {
     return await this._requestHandler(endpoints.Banners_Colors);
   }
 
-  public async BRStats(params: IBRStatsParams): Promise<IBRStats | IError> {
+  public async BRStats(params: IBRStatsParams): Promise<IBRStats> {
     return await this._requestHandler(endpoints.BR_Stats, params);
   }
 
-  public async BRStatsID(id: string, params: IBRStatsIdParams): Promise<IBRStats | IError> {
+  public async BRStatsID(id: string, params: IBRStatsIdParams): Promise<IBRStats> {
     return await this._requestHandler(endpoints.BR_StatsID + id, params);
   }
 
-  public async BRShop(language: string = this._language): Promise<IBRShop | IError> {
+  public async BRShop(language: string = this._language): Promise<IBRShop> {
     return await this._requestHandler(endpoints.BR_Shop, { language: language });
   }
-  public async BRShopCombined(language: string = this._language): Promise<IBRShop | IError> {
+  public async BRShopCombined(language: string = this._language): Promise<IBRShop> {
     return await this._requestHandler(endpoints.BR_ShopCombined, { language: language });
   }
 
-  public async CreatorCode(name: string): Promise<ICreatorCode | IError> {
+  public async CreatorCode(name: string): Promise<ICreatorCode> {
     return await this._requestHandler(endpoints.Creator_Code, { name: name });
   }
 
-  public async CreatorCodeSearch(name: string): Promise<ICreatorCode | IError> {
+  public async CreatorCodeSearch(name: string): Promise<ICreatorCode> {
     return await this._requestHandler(endpoints.Creator_CodeSearch, { name: name });
   }
 
-  public async CreatorCodeSearchAll(name: string): Promise<ICreatorCodeAll | IError> {
+  public async CreatorCodeSearchAll(name: string): Promise<ICreatorCodeAll> {
     return await this._requestHandler(endpoints.Creator_CodeSearchAll, { name: name });
   }
 
-  public async CosmeticsNew(language: string = this._language): Promise<ICosmeticsNew | IError> {
+  public async CosmeticsNew(language: string = this._language): Promise<ICosmeticsNew> {
     return await this._requestHandler(endpoints.Cosmetics_New, { language: language });
   }
 
-  public async CosmeticsList(language: string = this._language): Promise<ICosmeticsList | IError> {
+  public async CosmeticsList(language: string = this._language): Promise<ICosmeticsList> {
     return await this._requestHandler(endpoints.Cosmetics_List, { language: language });
   }
 
-  public async CosmeticsSearch(params: ICosmeticsSearchParams): Promise<ICosmeticsSearch | IError> {
+  public async CosmeticsSearch(params: ICosmeticsSearchParams): Promise<ICosmeticsSearch> {
     return await this._requestHandler(endpoints.Cosmetics_Search, params);
   }
 
-  public async CosmeticsSearchAll(params: ICosmeticsSearchParams): Promise<ICosmeticsSearchAll | IError> {
+  public async CosmeticsSearchAll(params: ICosmeticsSearchParams): Promise<ICosmeticsSearchAll> {
     return await this._requestHandler(endpoints.Cosmetics_SearchAll, params);
   }
 
-  public async CosmeticsSearchByIDs(id: string[], language: string = this._language): Promise<ICosmeticsSearchAll | IError> {
+  public async CosmeticsSearchByIDs(id: string[], language: string = this._language): Promise<ICosmeticsSearchAll> {
     return await this._requestHandler(endpoints.Cosmetics_SearchByIDs, { id: id, language: language });
   }
 
-  public async News(language: string = this._language): Promise<INews | IError> {
+  public async News(language: string = this._language): Promise<INews> {
     return await this._requestHandler(endpoints.News, { language: language });
   }
 
-  public async NewsBR(language: string = this._language): Promise<INewsMod | IError> {
+  public async NewsBR(language: string = this._language): Promise<INewsMod> {
     return await this._requestHandler(endpoints.News_BR, { language: language });
   }
 
-  public async NewsSTW(language: string = this._language): Promise<INewsMod | IError> {
+  public async NewsSTW(language: string = this._language): Promise<INewsMod> {
     return await this._requestHandler(endpoints.News_STW, { language: language });
   }
 
-  public async NewsCreative(language: string = this._language): Promise<INewsMod | IError> {
+  public async NewsCreative(language: string = this._language): Promise<INewsMod> {
     return await this._requestHandler(endpoints.News_Creative, { language: language });
   }
 }

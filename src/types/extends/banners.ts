@@ -1,5 +1,7 @@
+import { IError } from "..";
+
 // ########## Banners ########## //
-export interface IBanners {
+export interface IBanners extends IError {
   status: number,
   data: IBannersData[],
 }

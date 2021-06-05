@@ -1,11 +1,12 @@
+import { IError } from "..";
+
 // ######## Playlists ######## //
-export interface IPlaylists {
+export interface IPlaylists extends IError {
   status: number,
   data: IPlaylistsData[],
 }
 
-// ####### PlaylistsId ####### //
-export interface IPlaylistsId {
+export interface IPlaylistsId extends IError {
   status: number,
   data: IPlaylistsData,
 }

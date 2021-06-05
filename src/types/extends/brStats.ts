@@ -1,3 +1,5 @@
+import { IError } from "..";
+
 // ####### BRStats Params ####### //
 export interface IBRStatsParams {
   name?: string,
@@ -14,7 +16,7 @@ export interface IBRStatsIdParams {
 }
 
 // ########## BRStats ########## //
-export interface IBRStats {
+export interface IBRStats extends IError {
   status: number,
   data: {
     account?: {

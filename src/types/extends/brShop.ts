@@ -1,5 +1,7 @@
+import { IError } from "..";
+
 // ########## BRShop ########## //
-export interface IBRShop {
+export interface IBRShop extends IError {
   status: number,
   data: {
     hash?: string,
