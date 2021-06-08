@@ -1,2 +1,1 @@
-import $ from "./src/wrapper";
-export default $;
+export * from "./src/wrapper";
