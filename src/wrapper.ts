@@ -46,9 +46,9 @@ export default class FortniteAPI {
   }
 
   protected async _requestHandler(uri: string, params?) {
-    let url: string;
-    if (params?.language) url = this._preRequest(uri, { language: this._checkLanguage(params.language) })
-    else url = this._preRequest(uri);
+    let url: string = params?.language
+      ? this._preRequest(uri, { language: this._checkLanguage(params.language) })
+      : this._preRequest(uri);
 
     const response = await fetch(url, this._headers);
     return response.json();
